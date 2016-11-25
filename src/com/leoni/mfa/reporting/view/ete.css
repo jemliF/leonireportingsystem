@@ -1,0 +1,133 @@
+.mainFxmlClass {
+
+}
+
+.widget{
+    -fx-background-color: #f9f9f9;
+    -fx-border-width: 1px;
+    -fx-border-color: #cdcdcd;
+    -fx-border-style: solid;
+    -fx-text-fill: #555;
+}
+
+.titre{
+    -fx-background-image: url("../../../../../assets/images/titleBg.png");
+    -fx-background-repeat: repeat-x;
+    -fx-background-color: #efefef;
+    -fx-font-size: 20px;
+    -fx-border-width: 0px 1px 1px 0px;
+    -fx-border-color: #cdcdcd;
+    -fx-border-style: solid;
+}
+
+.winvoice{
+    -fx-font-size: 14px;
+}
+
+.h6{
+
+}
+
+.iconContainer{
+    -fx-border-width: 0px 1px 0px 0px;
+    -fx-border-color: #D5D5D5;
+    -fx-border-style: solid;
+    -fx-alignment: CENTER;
+
+}
+
+.header{
+    -fx-background-image: url("../../../../../assets/overlay.png");
+    -fx-background-position: center top;
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 170;
+}
+
+.borderContainer{
+    -fx-background-image: url("../../../../../assets/bg2.png");
+    -fx-background-repeat: repeat-x;
+    -fx-background-color: #EBEBEB;
+}
+
+.tabbedPane{
+    //-fx-background-image: url("../../../../../assets/tabbg.jpg");
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab-header-area .tab-header-background{
+    -fx-background-color: transparent;
+
+}
+
+/*.wrap{
+    -fx-background-image: url("../../../../../assets/overlay.png");
+}*/
+
+.logo{
+    //-fx-font: sans-serif;
+    //-fx-background-size: 350 70;
+}
+
+.tabContent{
+    //-fx-background-radius: 5.0;
+}
+
+.footer{
+    -fx-background-image: url("../../../../../assets/hr.png");
+    -fx-background-repeat: repeat-x;
+    -fx-background-position: left top;
+    -fx-background-color: #161B20;
+}
+
+.filter{
+    -fx-background-image: url("../../../../../assets/td-bg.png");
+    -fx-background-repeat: repeat-x, repeat-y;
+    -fx-background-position: top left;
+}
+
+.chart{
+    -fx-padding: 10px;
+    -fx-background-image: url("icon.png");   
+}
+.chart-content {
+    //-fx-padding: 30px;    
+}
+
+.chart-series-line {    
+    -fx-stroke-width: 3px;
+    -fx-effect: null;
+}
+
+/* The default css of chart legend in caspian. */
+.chart-legend {
+    -fx-background-color:  #cccccc, #eeeeee;
+    -fx-background-radius: 6,5;
+}
+
+.chart-bar{
+   // -fx-background-color: #3D9AB6;
+}
+
+.chart-title {
+    -fx-text-fill: #4682b4;
+    -fx-font-size: 1.6em;
+
+}
+
+.axis-label {
+    -fx-text-fill: #4682b4;
+}
+
+.chart-legend {
+    -fx-background-color:  transparent;
+    //-fx-padding: 10px;
+}
+
+.chart-legend-item-symbol{
+    -fx-background-radius: 5;
+}
+
+.chart-legend-item{
+    -fx-text-fill: #191970;
+}
+

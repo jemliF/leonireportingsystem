@@ -1,0 +1,43 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #FAFAFA;
+}
+
+.widget{
+    -fx-background-color: #f9f9f9;
+    -fx-border-width: 1px;
+    -fx-border-color: #cdcdcd;
+    -fx-border-style: solid;
+    -fx-indent: 32px;
+    -fx-text-fill: #555;
+    -fx-font:  sans-serif;
+}
+
+.titre{
+    -fx-background-image: url("../../../../../assets/images/titleBg.png");
+    -fx-background-repeat: repeat-x;
+    -fx-background-color: #efefef;
+    -fx-font-size: 20px;
+    -fx-font: sans-serif;
+    -fx-border-width: 0px 1px 1px 0px;
+    -fx-border-color: #cdcdcd;
+    -fx-border-style: solid;
+}
+
+.winvoice{
+
+}
+
+.h6{
+    
+}
+
+.iconContainer{
+    -fx-border-width: 0px 1px 0px 0px;
+    -fx-border-color: #D5D5D5;
+    -fx-border-style: solid;
+    -fx-alignment: CENTER;
+}

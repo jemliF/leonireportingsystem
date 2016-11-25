@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import jfxtras.labs.scene.control.radialmenu.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import jfxtras.scene.control.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="992.0" prefWidth="1220.0" style="-fx-background-color: #EBEBEB;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leoni.mfa.reporting.guioff.NewController">
+    <stylesheets>
+        <URL value="@new.css" />
+    </stylesheets>
+   <children>
+      <StackPane style="-fx-background-color: #EBEBEB;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ScrollPane fitToHeight="true" fitToWidth="true" minWidth="-Infinity" prefHeight="992.0" prefViewportHeight="992.0" prefViewportWidth="1220.0" prefWidth="1220.0" style="-fx-background-color: #EBEBEB;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" StackPane.alignment="CENTER">
+               <content>
+                  <BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="992.0" prefWidth="1220.0" style="-fx-background-color: #EBEBEB;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <top>
+                        <StackPane id="header" prefHeight="140.0" prefWidth="1226.0" stylesheets="@workflow.css" BorderPane.alignment="CENTER">
+                           <children>
+                              <Pane>
+                                 <children>
+                                    <Pane id="menu" layoutX="138.0" layoutY="100.0" prefHeight="35.0" prefWidth="1029.0" style="-fx-background-color: #E4E4E4; -fx-background-radius: 10.0;" />
+                                    <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="1227.0" style="-fx-background-color: #25201B;">
+                                       <children>
+                                          <Pane id="topmenu" prefHeight="35.0" prefWidth="1016.0" />
+                                          <Pane id="usermenu" layoutX="993.0" layoutY="14.0" prefHeight="35.0" prefWidth="426.0" />
+                                       </children>
+                                    </HBox>
+                                    <Pane id="logo" layoutX="133.0" layoutY="40.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="500.0" style="-fx-background-color: #000000; -fx-background-radius: 5.0;">
+                                       <children>
+                                          <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="268.0" style="-fx-font-size: 25px; -fx-font: sans-serif; -fx-text-fill: #EAEAEA;" text="MFA Reporting System" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </StackPane>
+                     </top>
+                     <bottom>
+                        <StackPane prefHeight="60.0" prefWidth="1226.0" style="-fx-background-color: #20272F;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Pane StackPane.alignment="CENTER">
+                                 <children>
+                                    <Label layoutX="514.0" layoutY="17.0" style="-fx-text-fill: #FFFFFF;" text="Footer">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </StackPane>
+                     </bottom>
+                     <center>
+                        <ScrollPane prefViewportHeight="726.0" prefViewportWidth="937.0" style="-fx-background-color: # FAFAFA; -fx-background-radius: 10.0;" BorderPane.alignment="CENTER">
+                           <content>
+                              <AnchorPane style="-fx-background-color: #FAFAFA;">
+                                 <children>
+                                    <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="115.0" prefWidth="983.0" style="-fx-background-color: #FAFAFA;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Pane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox layoutX="36.0" layoutY="7.0" spacing="12.0">
+                                                   <children>
+                                                      <HBox layoutX="36.0" layoutY="7.0" spacing="150.0">
+                                                         <children>
+                                                            <HBox layoutX="36.0" layoutY="7.0" spacing="20.0">
+                                                               <children>
+                                                                  <Label layoutX="36.0" layoutY="14.0" text="From" />
+                                                                  <LocalDateTextField layoutX="80.0" layoutY="10.0" />
+                                                                  <LocalTimePicker layoutX="213.0" layoutY="7.0" />
+                                                               </children>
+                                                            </HBox>
+                                                            <HBox layoutX="469.0" layoutY="7.0" spacing="52.0">
+                                                               <children>
+                                                                  <Label layoutX="36.0" layoutY="14.0" text="To" />
+                                                                  <LocalDateTextField layoutX="80.0" layoutY="10.0" />
+                                                                  <LocalTimePicker layoutX="213.0" layoutY="7.0" />
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox layoutX="36.0" layoutY="45.0" spacing="310.0">
+                                                         <children>
+                                                            <HBox layoutX="36.0" layoutY="45.0" spacing="23.0">
+                                                               <children>
+                                                                  <Label layoutX="36.0" layoutY="49.0" text="Shift" />
+                                                                  <ChoiceBox layoutX="83.0" layoutY="45.0" prefHeight="25.0" prefWidth="120.0" />
+                                                               </children>
+                                                            </HBox>
+                                                            <HBox layoutX="510.0" layoutY="45.0" spacing="20.0">
+                                                               <children>
+                                                                  <Label layoutX="510.0" layoutY="49.0" text="Segment" />
+                                                                  <ChoiceBox layoutX="580.0" layoutY="45.0" prefWidth="150.0" />
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <Button layoutX="821.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: linear-gradient(#f2f2f2, #d6d6d6),        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),        linear-gradient(#dddddd 0%, #f6f6f6 50%);; -fx-background-radius: 8,7,6;; -fx-background-insets: 0,1,2; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );; -fx-text-fill: #000000;" text="Show report">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Button>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane layoutY="119.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="983.0" style="-fx-background-color: #FAFAFA;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                       <children>
+                                          <ScrollPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FAFAFA;" StackPane.alignment="CENTER">
+                                             <content>
+                                                <LineChart prefHeight="242.0" prefWidth="500.0" style="-fx-background-color: #FAFAFA;">
+                                                   <xAxis>
+                                                      <CategoryAxis side="BOTTOM" />
+                                                   </xAxis>
+                                                   <yAxis>
+                                                      <NumberAxis side="LEFT" />
+                                                   </yAxis>
+                                                </LineChart>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane layoutY="394.0" prefHeight="250.0" prefWidth="937.0" style="-fx-background-color: #FAFAFA;">
+                                       <children>
+                                          <ScrollPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FAFAFA;" StackPane.alignment="CENTER">
+                                             <content>
+                                                <TableView prefHeight="241.0" prefWidth="489.0" style="-fx-background-color: #FAFAFA;">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="C1" />
+                                                      <TableColumn prefWidth="75.0" text="C2" />
+                                                   </columns>
+                                                </TableView>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane layoutY="649.0" prefHeight="82.0" prefWidth="983.0" style="-fx-background-color: #FAFAFA;">
+                                       <children>
+                                          <Pane prefHeight="65.0" prefWidth="903.0">
+                                             <children>
+                                                <Label layoutX="101.0" layoutY="33.0" text="Export to" />
+                                                <RadialMenu layoutX="313.0" layoutY="50.0">
+                                                   <children>
+                                                      <RadialMenuItem text="Excel" />
+                                                      <RadialMenuItem text="PDF" />
+                                                   </children>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </RadialMenu>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <BorderPane.margin>
+                              <Insets bottom="50.0" left="150.0" right="50.0" top="20.0" />
+                           </BorderPane.margin>
+                        </ScrollPane>
+                     </center>
+                  </BorderPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

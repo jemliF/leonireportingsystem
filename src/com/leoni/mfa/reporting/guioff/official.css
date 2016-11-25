@@ -1,0 +1,34 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.header{
+    -fx-background-image: url("../../../../../assets/images/overlay.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center top;
+}
+
+.wrap{
+     
+}
+
+.topmenu{
+
+}
+
+.usermenu{
+    -fx-background-color: #fff;
+}
+
+.logo{
+    -fx-font-weight: lighter;   
+    -fx-background-color: #FFF;
+
+}
+
+.menu{
+
+}

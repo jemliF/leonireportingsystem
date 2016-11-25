@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.controlsfx.glyphfont.*?>
+<?import org.controlsfx.control.*?>
+<?import javafx.scene.image.*?>
+<?import jfxtras.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1300.0" prefWidth="1200.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leoni.mfa.reporting.guioff.TabbedFunctionController">
+    <stylesheets>
+        <URL value="@tabbedfunction.css" />
+    </stylesheets>
+   <children>
+      <ScrollPane fitToWidth="true" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="1300.0" prefViewportHeight="800.0" prefViewportWidth="1200.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <BorderPane prefHeight="1300.0" prefWidth="1360.0" styleClass="borderContainer" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="128.5" prefWidth="1200.0" styleClass="header" BorderPane.alignment="CENTER">
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <center>
+                              <AnchorPane minWidth="-Infinity" prefHeight="70.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <ImageView fitHeight="70.0" fitWidth="350.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" styleClass="logo" AnchorPane.bottomAnchor="48.81818199157715" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="835.0" AnchorPane.topAnchor="52.0">
+                                       <image>
+                                          <Image url="@../../../../../assets/logo.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <BorderPane.margin>
+                                    <Insets />
+                                 </BorderPane.margin>
+                                 <padding>
+                                    <Insets left="500.0" />
+                                 </padding>
+                              </AnchorPane>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <bottom>
+                  <AnchorPane prefHeight="45.0" prefWidth="1200.0" styleClass="footer" BorderPane.alignment="CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </AnchorPane>
+               </bottom>
+               <center>
+                  <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1150.0" prefWidth="960.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TabPane prefHeight="585.0" prefWidth="960.0" styleClass="tabbedPane" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="34.0" tabMaxWidth="120.0" tabMinHeight="35.0" tabMinWidth="120.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab text="Workflow">
+                              <content>
+                                <AnchorPane minHeight="-Infinity" prefHeight="1100.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="1040.0" prefWidth="960.0" style="-fx-background-color: #FFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox layoutX="86.0" layoutY="164.0" prefHeight="584.0" prefWidth="960.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <AnchorPane minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0">
+                                                         <children>
+                                                            <VBox fx:id="filters" layoutX="10.0" layoutY="37.0" minWidth="-Infinity" prefHeight="344.0" prefWidth="231.0" spacing="30.0" AnchorPane.bottomAnchor="142.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="37.0">
+                                                               <children>
+                                                                  <HBox layoutX="14.0" layoutY="49.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" spacing="20.0">
+                                                                     <children>
+                                                                        <Label layoutX="14.0" layoutY="87.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="50.0" text="From" />
+                                                                        <VBox layoutX="52.0" layoutY="83.0" spacing="5.0">
+                                                                           <children>
+                                                                              <LocalDateTextField fx:id="startDate" />
+                                                                              <LocalTimePicker fx:id="startTime" layoutX="52.0" layoutY="117.0" prefHeight="32.0" prefWidth="124.0" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="14.0" layoutY="129.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" spacing="20.0">
+                                                                     <children>
+                                                                        <Label layoutX="14.0" layoutY="87.0" minWidth="-Infinity" prefWidth="50.0" text="To" />
+                                                                        <VBox layoutX="52.0" layoutY="83.0" prefHeight="62.0" prefWidth="130.0" spacing="5.0">
+                                                                           <children>
+                                                                              <LocalDateTextField fx:id="endDate" prefHeight="25.0" prefWidth="76.0" />
+                                                                              <LocalTimePicker fx:id="endTime" layoutX="52.0" layoutY="117.0" prefHeight="32.0" prefWidth="124.0" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="shiftsHBox" layoutX="23.0" layoutY="305.0" spacing="45.0">
+                                                                     <children>
+                                                                        <Label layoutX="23.0" layoutY="309.0" text="Shift" />
+                                                                        <ComboBox fx:id="shifts" maxWidth="-Infinity" onAction="#onShiftSelected" prefWidth="117.0" />
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="segmentsHBox" layoutX="23.0" layoutY="236.0" spacing="23.0">
+                                                                     <children>
+                                                                        <Label layoutX="23.0" layoutY="240.0" text="Segment" />
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="processesHBox" prefHeight="100.0" prefWidth="200.0" spacing="18.0">
+                                                                     <children>
+                                                                        <Label text="Processes" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                            <Button fx:id="btnShowReportWorkflow" layoutX="80.0" layoutY="480.0" mnemonicParsing="false" onAction="#showReportWorkflow" prefHeight="25.0" prefWidth="92.0" text="Show Report" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane minWidth="-Infinity" prefHeight="200.0" prefWidth="710.0">
+                                                         <children>
+                                                            <VBox prefHeight="584.0" prefWidth="710.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <AnchorPane prefHeight="360.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <VBox fx:id="chartsContainer" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                           <children>
+                                                                              <LineChart fx:id="lineChart" minHeight="-Infinity" prefHeight="300.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                                <xAxis>
+                                                                                  <CategoryAxis side="BOTTOM" />
+                                                                                </xAxis>
+                                                                                <yAxis>
+                                                                                  <NumberAxis side="LEFT" />
+                                                                                </yAxis>
+                                                                              </LineChart>
+                                                                              <PieChart fx:id="pieChart" minHeight="-Infinity" prefHeight="250.0" prefWidth="300.0" />
+                                                                              <BarChart fx:id="barChart" legendVisible="false" minHeight="-Infinity" prefHeight="250.0" prefWidth="710.0" title="Rework">
+                                                                                <xAxis>
+                                                                                  <CategoryAxis fx:id="categoryAxis" side="BOTTOM" />
+                                                                                </xAxis>
+                                                                                <yAxis>
+                                                                                  <NumberAxis fx:id="numberAxis" side="LEFT" />
+                                                                                </yAxis>
+                                                                              </BarChart>
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="710.0">
+                                                                     <children>
+                                                                        <TableView fx:id="tableView" editable="true" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="710.0" style="-fx-border-width: 1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets right="10.0" />
+                                                                     </padding>
+                                                                  </AnchorPane>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                                 <graphic>
+                                    <FontAwesomeIconView size="25" />
+                                 </graphic>
+                            </Tab>
+                            <Tab text="Effeciency">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane layoutX="45.0" layoutY="41.0" prefHeight="584.0" prefWidth="960.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox prefHeight="584.0" prefWidth="960.0">
+                                                   <children>
+                                                      <AnchorPane minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0">
+                                                         <children>
+                                                            <VBox fx:id="filters1" layoutX="10.0" layoutY="37.0" minWidth="-Infinity" prefHeight="344.0" prefWidth="231.0" spacing="30.0">
+                                                               <children>
+                                                                  <HBox layoutX="14.0" layoutY="49.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" spacing="20.0">
+                                                                     <children>
+                                                                        <Label layoutX="14.0" layoutY="87.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="50.0" text="From" />
+                                                                        <VBox layoutX="52.0" layoutY="83.0" spacing="5.0">
+                                                                           <children>
+                                                                              <LocalDateTextField fx:id="startDate1" />
+                                                                              <LocalTimePicker fx:id="startTime1" layoutX="52.0" layoutY="117.0" prefHeight="32.0" prefWidth="124.0" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="14.0" layoutY="129.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" spacing="20.0">
+                                                                     <children>
+                                                                        <Label layoutX="14.0" layoutY="87.0" minWidth="-Infinity" prefWidth="50.0" text="To" />
+                                                                        <VBox layoutX="52.0" layoutY="83.0" prefHeight="62.0" prefWidth="130.0" spacing="5.0">
+                                                                           <children>
+                                                                              <LocalDateTextField fx:id="endDate1" prefHeight="25.0" prefWidth="76.0" />
+                                                                              <LocalTimePicker fx:id="endTime1" layoutX="52.0" layoutY="117.0" prefHeight="32.0" prefWidth="124.0" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="shiftsHBox1" layoutX="23.0" layoutY="305.0" spacing="45.0">
+                                                                     <children>
+                                                                        <Label layoutX="23.0" layoutY="309.0" text="Shift" />
+                                                                        <ComboBox fx:id="shifts1" maxWidth="-Infinity" onAction="#onShiftSelected" prefWidth="117.0" />
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="segmentsHBox1" layoutX="23.0" layoutY="236.0" spacing="23.0">
+                                                                     <children>
+                                                                        <Label layoutX="23.0" layoutY="240.0" text="Segment" />
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="processesHBox1" prefHeight="100.0" prefWidth="200.0" spacing="18.0">
+                                                                     <children>
+                                                                        <Label text="Processes" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                            <Button fx:id="btnShowReportWorkflow1" layoutX="80.0" layoutY="398.0" mnemonicParsing="false" onAction="#showReportWorkflow" prefHeight="25.0" prefWidth="92.0" text="Show Report" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane minWidth="-Infinity" prefHeight="200.0" prefWidth="710.0">
+                                                         <children>
+                                                            <VBox prefHeight="584.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <AnchorPane prefHeight="360.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <LineChart fx:id="lineChart1" minHeight="-Infinity" prefHeight="350.0" prefWidth="710.0" title="Workflow" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                           <xAxis>
+                                                                              <CategoryAxis side="BOTTOM" />
+                                                                           </xAxis>
+                                                                           <yAxis>
+                                                                              <NumberAxis side="LEFT" />
+                                                                           </yAxis>
+                                                                        </LineChart>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                  <AnchorPane minHeight="-Infinity" prefHeight="200.0" prefWidth="710.0">
+                                                                     <children>
+                                                                        <TableView fx:id="tableView1" editable="true" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="200.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="UMBRELLA" size="25" />
+                                 </graphic>
+                            </Tab>
+                              <Tab text="Scrap">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane layoutX="130.0" layoutY="208.0" prefHeight="584.0" prefWidth="960.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox prefHeight="584.0" prefWidth="960.0">
+                                                   <children>
+                                                      <AnchorPane minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0">
+                                                         <children>
+                                                            <VBox fx:id="filters11" layoutX="10.0" layoutY="37.0" minWidth="-Infinity" prefHeight="344.0" prefWidth="231.0" spacing="30.0">
+                                                               <children>
+                                                                  <HBox layoutX="14.0" layoutY="49.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" spacing="20.0">
+                                                                     <children>
+                                                                        <Label layoutX="14.0" layoutY="87.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="50.0" text="From" />
+                                                                        <VBox layoutX="52.0" layoutY="83.0" spacing="5.0">
+                                                                           <children>
+                                                                              <LocalDateTextField fx:id="startDate11" />
+                                                                              <LocalTimePicker fx:id="startTime11" layoutX="52.0" layoutY="117.0" prefHeight="32.0" prefWidth="124.0" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="14.0" layoutY="129.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" spacing="20.0">
+                                                                     <children>
+                                                                        <Label layoutX="14.0" layoutY="87.0" minWidth="-Infinity" prefWidth="50.0" text="To" />
+                                                                        <VBox layoutX="52.0" layoutY="83.0" prefHeight="62.0" prefWidth="130.0" spacing="5.0">
+                                                                           <children>
+                                                                              <LocalDateTextField fx:id="endDate11" prefHeight="25.0" prefWidth="76.0" />
+                                                                              <LocalTimePicker fx:id="endTime11" layoutX="52.0" layoutY="117.0" prefHeight="32.0" prefWidth="124.0" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="shiftsHBox11" layoutX="23.0" layoutY="305.0" spacing="45.0">
+                                                                     <children>
+                                                                        <Label layoutX="23.0" layoutY="309.0" text="Shift" />
+                                                                        <ComboBox fx:id="shifts11" maxWidth="-Infinity" onAction="#onShiftSelected" prefWidth="117.0" />
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="segmentsHBox11" layoutX="23.0" layoutY="236.0" spacing="23.0">
+                                                                     <children>
+                                                                        <Label layoutX="23.0" layoutY="240.0" text="Segment" />
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="processesHBox11" prefHeight="100.0" prefWidth="200.0" spacing="18.0">
+                                                                     <children>
+                                                                        <Label text="Processes" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                            <Button fx:id="btnShowReportWorkflow11" layoutX="80.0" layoutY="398.0" mnemonicParsing="false" onAction="#showReportWorkflow" prefHeight="25.0" prefWidth="92.0" text="Show Report" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane minWidth="-Infinity" prefHeight="200.0" prefWidth="710.0">
+                                                         <children>
+                                                            <VBox prefHeight="584.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <AnchorPane prefHeight="360.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <LineChart fx:id="lineChart11" minHeight="-Infinity" prefHeight="350.0" prefWidth="710.0" title="Workflow" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                           <xAxis>
+                                                                              <CategoryAxis side="BOTTOM" />
+                                                                           </xAxis>
+                                                                           <yAxis>
+                                                                              <NumberAxis side="LEFT" />
+                                                                           </yAxis>
+                                                                        </LineChart>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                  <AnchorPane minHeight="-Infinity" prefHeight="200.0" prefWidth="710.0">
+                                                                     <children>
+                                                                        <TableView fx:id="tableView11" editable="true" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="200.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="CLOUD" size="25" />
+                                 </graphic>
+                              </Tab>
+                              <Tab text="KSK Type">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane layoutX="199.0" layoutY="117.0" prefHeight="584.0" prefWidth="960.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox prefHeight="584.0" prefWidth="960.0">
+                                                   <children>
+                                                      <AnchorPane minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0">
+                                                         <children>
+                                                            <VBox fx:id="filters12" layoutX="10.0" layoutY="37.0" minWidth="-Infinity" prefHeight="344.0" prefWidth="231.0" spacing="30.0">
+                                                               <children>
+                                                                  <HBox layoutX="14.0" layoutY="49.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" spacing="20.0">
+                                                                     <children>
+                                                                        <Label layoutX="14.0" layoutY="87.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="50.0" text="From" />
+                                                                        <VBox layoutX="52.0" layoutY="83.0" spacing="5.0">
+                                                                           <children>
+                                                                              <LocalDateTextField fx:id="startDate12" />
+                                                                              <LocalTimePicker fx:id="startTime12" layoutX="52.0" layoutY="117.0" prefHeight="32.0" prefWidth="124.0" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="14.0" layoutY="129.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" spacing="20.0">
+                                                                     <children>
+                                                                        <Label layoutX="14.0" layoutY="87.0" minWidth="-Infinity" prefWidth="50.0" text="To" />
+                                                                        <VBox layoutX="52.0" layoutY="83.0" prefHeight="62.0" prefWidth="130.0" spacing="5.0">
+                                                                           <children>
+                                                                              <LocalDateTextField fx:id="endDate12" prefHeight="25.0" prefWidth="76.0" />
+                                                                              <LocalTimePicker fx:id="endTime12" layoutX="52.0" layoutY="117.0" prefHeight="32.0" prefWidth="124.0" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="shiftsHBox12" layoutX="23.0" layoutY="305.0" spacing="45.0">
+                                                                     <children>
+                                                                        <Label layoutX="23.0" layoutY="309.0" text="Shift" />
+                                                                        <ComboBox fx:id="shifts12" maxWidth="-Infinity" onAction="#onShiftSelected" prefWidth="117.0" />
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="segmentsHBox12" layoutX="23.0" layoutY="236.0" spacing="23.0">
+                                                                     <children>
+                                                                        <Label layoutX="23.0" layoutY="240.0" text="Segment" />
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="processesHBox12" prefHeight="100.0" prefWidth="200.0" spacing="18.0">
+                                                                     <children>
+                                                                        <Label text="Processes" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                            <Button fx:id="btnShowReportWorkflow12" layoutX="80.0" layoutY="398.0" mnemonicParsing="false" onAction="#showReportWorkflow" prefHeight="25.0" prefWidth="92.0" text="Show Report" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane minWidth="-Infinity" prefHeight="200.0" prefWidth="710.0">
+                                                         <children>
+                                                            <VBox prefHeight="584.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <AnchorPane prefHeight="360.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <LineChart fx:id="lineChart12" minHeight="-Infinity" prefHeight="350.0" prefWidth="710.0" title="Workflow" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                           <xAxis>
+                                                                              <CategoryAxis side="BOTTOM" />
+                                                                           </xAxis>
+                                                                           <yAxis>
+                                                                              <NumberAxis side="LEFT" />
+                                                                           </yAxis>
+                                                                        </LineChart>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                  <AnchorPane minHeight="-Infinity" prefHeight="200.0" prefWidth="710.0">
+                                                                     <children>
+                                                                        <TableView fx:id="tableView12" editable="true" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="200.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="SUITCASE" size="25" />
+                                 </graphic>
+                              </Tab>
+                              <Tab text="ETE Table">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane layoutX="170.0" layoutY="92.0" prefHeight="584.0" prefWidth="960.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox prefHeight="584.0" prefWidth="960.0">
+                                                   <children>
+                                                      <AnchorPane minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0">
+                                                         <children>
+                                                            <VBox fx:id="filters13" layoutX="10.0" layoutY="37.0" minWidth="-Infinity" prefHeight="344.0" prefWidth="231.0" spacing="30.0">
+                                                               <children>
+                                                                  <HBox layoutX="14.0" layoutY="49.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" spacing="20.0">
+                                                                     <children>
+                                                                        <Label layoutX="14.0" layoutY="87.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="50.0" text="From" />
+                                                                        <VBox layoutX="52.0" layoutY="83.0" spacing="5.0">
+                                                                           <children>
+                                                                              <LocalDateTextField fx:id="startDate13" />
+                                                                              <LocalTimePicker fx:id="startTime13" layoutX="52.0" layoutY="117.0" prefHeight="32.0" prefWidth="124.0" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="14.0" layoutY="129.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" spacing="20.0">
+                                                                     <children>
+                                                                        <Label layoutX="14.0" layoutY="87.0" minWidth="-Infinity" prefWidth="50.0" text="To" />
+                                                                        <VBox layoutX="52.0" layoutY="83.0" prefHeight="62.0" prefWidth="130.0" spacing="5.0">
+                                                                           <children>
+                                                                              <LocalDateTextField fx:id="endDate13" prefHeight="25.0" prefWidth="76.0" />
+                                                                              <LocalTimePicker fx:id="endTime13" layoutX="52.0" layoutY="117.0" prefHeight="32.0" prefWidth="124.0" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="shiftsHBox13" layoutX="23.0" layoutY="305.0" spacing="45.0">
+                                                                     <children>
+                                                                        <Label layoutX="23.0" layoutY="309.0" text="Shift" />
+                                                                        <ComboBox fx:id="shifts13" maxWidth="-Infinity" onAction="#onShiftSelected" prefWidth="117.0" />
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="segmentsHBox13" layoutX="23.0" layoutY="236.0" spacing="23.0">
+                                                                     <children>
+                                                                        <Label layoutX="23.0" layoutY="240.0" text="Segment" />
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="processesHBox13" prefHeight="100.0" prefWidth="200.0" spacing="18.0">
+                                                                     <children>
+                                                                        <Label text="Processes" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                            <Button fx:id="btnShowReportWorkflow13" layoutX="80.0" layoutY="398.0" mnemonicParsing="false" onAction="#showReportWorkflow" prefHeight="25.0" prefWidth="92.0" text="Show Report" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane minWidth="-Infinity" prefHeight="200.0" prefWidth="710.0">
+                                                         <children>
+                                                            <VBox prefHeight="584.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <AnchorPane prefHeight="360.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <LineChart fx:id="lineChart13" minHeight="-Infinity" prefHeight="350.0" prefWidth="710.0" title="Workflow" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                           <xAxis>
+                                                                              <CategoryAxis side="BOTTOM" />
+                                                                           </xAxis>
+                                                                           <yAxis>
+                                                                              <NumberAxis side="LEFT" />
+                                                                           </yAxis>
+                                                                        </LineChart>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                  <AnchorPane minHeight="-Infinity" prefHeight="200.0" prefWidth="710.0">
+                                                                     <children>
+                                                                        <TableView fx:id="tableView13" editable="true" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="200.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="DOLLAR" size="25" />
+                                 </graphic>
+                              </Tab>
+                              <Tab text="Rework">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane layoutX="259.0" layoutY="118.0" prefHeight="584.0" prefWidth="960.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox prefHeight="584.0" prefWidth="960.0">
+                                                   <children>
+                                                      <AnchorPane minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0">
+                                                         <children>
+                                                            <VBox fx:id="filters14" layoutX="10.0" layoutY="37.0" minWidth="-Infinity" prefHeight="344.0" prefWidth="231.0" spacing="30.0">
+                                                               <children>
+                                                                  <HBox layoutX="14.0" layoutY="49.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" spacing="20.0">
+                                                                     <children>
+                                                                        <Label layoutX="14.0" layoutY="87.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="50.0" text="From" />
+                                                                        <VBox layoutX="52.0" layoutY="83.0" spacing="5.0">
+                                                                           <children>
+                                                                              <LocalDateTextField fx:id="startDate14" />
+                                                                              <LocalTimePicker fx:id="startTime14" layoutX="52.0" layoutY="117.0" prefHeight="32.0" prefWidth="124.0" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="14.0" layoutY="129.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" spacing="20.0">
+                                                                     <children>
+                                                                        <Label layoutX="14.0" layoutY="87.0" minWidth="-Infinity" prefWidth="50.0" text="To" />
+                                                                        <VBox layoutX="52.0" layoutY="83.0" prefHeight="62.0" prefWidth="130.0" spacing="5.0">
+                                                                           <children>
+                                                                              <LocalDateTextField fx:id="endDate14" prefHeight="25.0" prefWidth="76.0" />
+                                                                              <LocalTimePicker fx:id="endTime14" layoutX="52.0" layoutY="117.0" prefHeight="32.0" prefWidth="124.0" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="shiftsHBox14" layoutX="23.0" layoutY="305.0" spacing="45.0">
+                                                                     <children>
+                                                                        <Label layoutX="23.0" layoutY="309.0" text="Shift" />
+                                                                        <ComboBox fx:id="shifts14" maxWidth="-Infinity" onAction="#onShiftSelected" prefWidth="117.0" />
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="segmentsHBox14" layoutX="23.0" layoutY="236.0" spacing="23.0">
+                                                                     <children>
+                                                                        <Label layoutX="23.0" layoutY="240.0" text="Segment" />
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox fx:id="processesHBox14" prefHeight="100.0" prefWidth="200.0" spacing="18.0">
+                                                                     <children>
+                                                                        <Label text="Processes" />
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                            <Button fx:id="btnShowReportWorkflow14" layoutX="80.0" layoutY="398.0" mnemonicParsing="false" onAction="#showReportWorkflow" prefHeight="25.0" prefWidth="92.0" text="Show Report" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane minWidth="-Infinity" prefHeight="200.0" prefWidth="710.0">
+                                                         <children>
+                                                            <VBox prefHeight="584.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <AnchorPane prefHeight="360.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <LineChart fx:id="lineChart14" minHeight="-Infinity" prefHeight="350.0" prefWidth="710.0" title="Workflow" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                           <xAxis>
+                                                                              <CategoryAxis side="BOTTOM" />
+                                                                           </xAxis>
+                                                                           <yAxis>
+                                                                              <NumberAxis side="LEFT" />
+                                                                           </yAxis>
+                                                                        </LineChart>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                  <AnchorPane minHeight="-Infinity" prefHeight="200.0" prefWidth="710.0">
+                                                                     <children>
+                                                                        <TableView fx:id="tableView14" editable="true" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="200.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                                 <graphic>
+                                    <FontAwesomeIconView size="25" />
+                                 </graphic>
+                              </Tab>
+                          </tabs>
+                           <opaqueInsets>
+                              <Insets top="25.0" />
+                           </opaqueInsets>
+                        </TabPane>
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="25.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

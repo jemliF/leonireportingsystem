@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leoni.mfa.reporting.gui.WorkflowAltFXMLController">
+   <children>
+      <StackPane layoutX="14.0" layoutY="14.0" prefHeight="59.0" prefWidth="726.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="200.0" StackPane.alignment="CENTER_LEFT">
+               <image>
+                  <Image url="@../../../../../../../../../Desktop/leoni_logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <StackPane layoutX="14.0" layoutY="121.0" prefHeight="514.0" prefWidth="752.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="121.0">
+         <children>
+            <SplitPane dividerPositions="0.21066666666666667" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="200.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TitledPane animated="false" layoutX="3.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="150.0" text="From" AnchorPane.bottomAnchor="292.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="14.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="165.0" prefWidth="118.0" />
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="3.0" layoutY="256.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="150.0" text="To" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="256.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="165.0" prefWidth="118.0" />
+                           </content>
+                        </TitledPane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <SplitPane dividerPositions="0.4215686274509804" layoutX="48.0" layoutY="44.0" orientation="VERTICAL" prefHeight="512.0" prefWidth="672.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <TableView prefHeight="212.0" prefWidth="670.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columns>
+                                          <TableColumn prefWidth="108.0" text="Line" />
+                                          <TableColumn prefWidth="136.0" text="BRW" />
+                                          <TableColumn minWidth="50.0" prefWidth="150.0" text="ETE(Effective/Worked)" />
+                                          <TableColumn prefWidth="110.0" text="SCR11" />
+                                          <TableColumn prefWidth="105.0" text="REW" />
+                                       </columns>
+                                       <padding>
+                                          <Insets top="14.0" />
+                                       </padding>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <PieChart layoutX="14.0" layoutY="13.0" prefHeight="243.0" prefWidth="303.0" />
+                                 </children></AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </StackPane>
+      <StackPane layoutX="14.0" layoutY="73.0" prefHeight="32.0" prefWidth="752.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+         <children>
+            <HBox spacing="5.0">
+               <children>
+                  <FontAwesomeIconView glyphName="HOME" size="25.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <Hyperlink text="MFA Statistics" textAlignment="CENTER" StackPane.alignment="CENTER_LEFT">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </HBox>
+            <Label text="Workflow" textAlignment="CENTER" StackPane.alignment="CENTER">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

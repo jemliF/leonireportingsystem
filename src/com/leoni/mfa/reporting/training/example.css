@@ -1,0 +1,15 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.paneau1{
+    -fx-background-color: red;
+}
+
+#paneauu{
+    -fx-background-color: yellow;
+}

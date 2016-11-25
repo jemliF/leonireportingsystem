@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import jfxtras.scene.control.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1400.0" prefWidth="1200.0" styleClass="mainFxmlClass" stylesheets="@finalfunctionview.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leoni.mfa.reporting.view.FinalFunctionViewController">
+   <children>
+      <ScrollPane fitToWidth="true" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="1400.0" prefViewportHeight="800.0" prefViewportWidth="1200.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <BorderPane prefHeight="1400.0" prefWidth="1360.0" styleClass="borderContainer" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <bottom>
+                  <AnchorPane prefHeight="45.0" prefWidth="1200.0" styleClass="footer" BorderPane.alignment="CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </AnchorPane>
+               </bottom>
+               <center>
+                  <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1170.0" prefWidth="960.0" styleClass="tabbedPane" BorderPane.alignment="CENTER">
+                     <opaqueInsets>
+                        <Insets bottom="25.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </AnchorPane>
+               </center>
+               <top>
+                  <AnchorPane prefHeight="128.5" prefWidth="1200.0" styleClass="header" BorderPane.alignment="CENTER">
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <center>
+                              <AnchorPane minWidth="-Infinity" prefHeight="70.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <ImageView fitHeight="70.0" fitWidth="350.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" styleClass="logo">
+                                       <image>
+                                          <Image url="@../../../../../assets/logo.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <BorderPane.margin>
+                                    <Insets />
+                                 </BorderPane.margin>
+                              </AnchorPane>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+            </BorderPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

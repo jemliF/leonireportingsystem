@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leoni.mfa.reporting.guioff.PanelsController">
+    <stylesheets>
+        <URL value="@panels.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="19.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="151.0" prefWidth="960.0" styleClass="widget" AnchorPane.bottomAnchor="617.0" AnchorPane.topAnchor="132.0">
+         <children>
+            <VBox layoutY="-1.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="151.0" prefWidth="960.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="959.0" styleClass="titre" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="-2.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="-12.0" layoutY="8.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="960.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="40.0" styleClass="iconContainer">
+                                 <children>
+                                    <FontAwesomeIconView glyphName="HTML5" layoutY="25.428571701049805" size="25" wrappingWidth="25.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="8.0" />
+                                 </padding>
+                              </AnchorPane>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="920.0" styleClass="h6">
+                                 <children>
+                                    <Label contentDisplay="CENTER" prefHeight="36.0" prefWidth="920.0" text="Etat Actuel" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="960.0" styleClass="winvoice" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="20.0" layoutY="412.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="151.0" prefWidth="250.0" styleClass="widget">
+         <children>
+            <VBox layoutY="-1.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="151.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="249.0" styleClass="titre" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="-2.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="-12.0" layoutY="8.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="40.0" styleClass="iconContainer">
+                                 <children>
+                                    <FontAwesomeIconView glyphName="HTML5" layoutY="25.428571701049805" size="25" wrappingWidth="25.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="8.0" />
+                                 </padding>
+                              </AnchorPane>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="210.0" styleClass="h6">
+                                 <children>
+                                    <Label contentDisplay="CENTER" prefHeight="36.0" prefWidth="920.0" text="Etat Actuel" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" styleClass="winvoice" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

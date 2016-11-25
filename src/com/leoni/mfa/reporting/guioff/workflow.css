@@ -1,0 +1,48 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+/*#header{
+    background-image:url(../images/overlay.png);
+    background-repeat:no-repeat;
+    background-position:center top;
+    height:170px
+}
+#header .logo{
+    float:left;width:350px;
+    height:70px;
+    font-size:24px;
+    font-weight:lighter;
+    color:#FFF;
+    line-height:70px
+}
+#header .logo img{
+    padding-top:22px;
+    padding-left:10px
+}
+#header .logo a{color:#fff}
+#header .logo a:hover{text-decoration:none}
+#header .ajax-search{
+    float:right;
+    margin-top:12px;
+    position:relative;
+    z-index:8000}
+#header .ajax-search input{
+    background-image:url(../images/ajax-search.png);
+    background-repeat:no-repeat;height:45px;width:229px;background-color:transparent;font-size:16px;line-height:16px;color:#FFF;padding-right:40px;padding-left:10px;border-width:0}
+#header .topmenu{heigh:35;line-height:35px;float:left}
+#header .usermenu{heigh:35;line-height:35px;float:right;color:#fff}
+#header .usermenu span.cart-status{color:#F90;font-weight:600}
+
+#header{
+
+}*/
+
+#header
+{
+    
+}

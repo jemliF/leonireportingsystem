@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<leoni_reporting_system>
+    <db>
+        <driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver>
+        <database>REP_MFA</database>
+        <user>sa</user>
+        <password>MFAproject</password>
+        <servername>10.190.160.5</servername>
+        <serverport>1433</serverport>
+        <archive_db>LEP_MFA</archive_db>
+        <archive_interval>10</archive_interval>
+    </db>    
+    <shifts>
+        <shift number="1" enabled="True"></shift>
+        <shift number="2" enabled="True"></shift>
+        <shift number="3" enabled="False"></shift>
+    </shifts>
+    <processes>
+        <!-- inner roam processes  -->
+        <!-- ISH: Include in Statistics per Hour - ITSH: Include in Total Statistics per Hour -->
+        <process operation="BRW" route_step="110" segment="INR" ISH="True" ITSH="True"></process>
+        <process operation="USW" route_step="30" segment="INR" ISH="True" ITSH="True"></process>
+        <process operation="ASS" route_step="24" segment="INR" ISH="True" ITSH="True"></process>
+        <process operation="ETE" route_step="60" segment="INR" ISH="True" ITSH="True"></process>
+        <process operation="SCR" route_step="70" segment="INR" ISH="False" ITSH="False"></process>
+        <process operation="RFA" route_step="10" segment="INR" ISH="False" ITSH="True"></process>
+        <process operation="PAC" route_step="80" segment="INR" ISH="False" ITSH="False"></process>
+        <process operation="PAC" route_step="84" segment="INR" ISH="False" ITSH="False"></process>
+        <process operation="REW" route_step="90" segment="INR" ISH="True" ITSH="True"></process>
+        <!-- motor roam processes  -->
+        <process operation="BRW" route_step="112" segment="MRA" ISH="True" ITSH="True"></process>
+        <process operation="ETE" route_step="62" segment="MRA" ISH="True" ITSH="True"></process>
+        <process operation="FOA" route_step="40" segment="MRA" ISH="True" ITSH="True"></process>
+        <process operation="ETE" route_step="63" segment="MRA" ISH="True" ITSH="True"></process>
+        <process operation="SCR" route_step="72" segment="MRA" ISH="False" ITSH="False"></process>
+        <process operation="RFA" route_step="12" segment="MRA" ISH="False" ITSH="True"></process>
+        <process operation="SCR" route_step="76" segment="MRA" ISH="False" ITSH="True"></process>
+        <process operation="PAC" route_step="86" segment="MRA" ISH="False" ITSH="False"></process>
+        <process operation="REW" route_step="92" segment="MRA" ISH="True" ITSH="True"></process>
+    </processes>
+</leoni_reporting_system>

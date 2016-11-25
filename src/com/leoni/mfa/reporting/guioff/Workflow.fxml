@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.chart.*?>
+<?import jfxtras.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import jfxtras.scene.layout.*?>
+<?import jfxtras.labs.scene.control.grid.*?>
+<?import jfxtras.labs.scene.control.gauge.*?>
+<?import jfxtras.labs.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="992.0" prefWidth="1220.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leoni.mfa.reporting.guioff.WorkflowController">
+    <stylesheets>
+        <URL value="@workflow.css" />
+        <URL value="@font-awesome.css" />
+    </stylesheets>
+    <children>
+        <StackPane id="header" layoutX="14.0" layoutY="14.0" prefHeight="140.0" prefWidth="1226.0" style="-fx-background-repeat: no-repeat; -fx-background-position: center-top; -fx-background-image: url(./images/overlay.png);" stylesheets="@workflow.css" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="14.0" />
+        <StackPane layoutX="14.0" layoutY="163.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="1226.0" snapToPixel="false" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="163.0">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                    <children>
+                        <StackPane prefHeight="744.0" prefWidth="937.0">
+                            <children>
+                                <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                    <children>
+                                        <StackPane prefHeight="115.0" prefWidth="983.0">
+                                            <children>
+                                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox layoutX="36.0" layoutY="7.0" spacing="12.0">
+                                                            <children>
+                                                                <HBox layoutX="36.0" layoutY="7.0" spacing="150.0">
+                                                                    <children>
+                                                                        <HBox layoutX="36.0" layoutY="7.0" spacing="20.0">
+                                                                            <children>
+                                                                                <Label layoutX="36.0" layoutY="14.0" text="From" />
+                                                                                <LocalDateTextField layoutX="80.0" layoutY="10.0" />
+                                                                                <LocalTimePicker layoutX="213.0" layoutY="7.0" />
+                                                                            </children>
+                                                                        </HBox>
+                                                                        <HBox layoutX="469.0" layoutY="7.0" spacing="52.0">
+                                                                            <children>
+                                                                                <Label layoutX="36.0" layoutY="14.0" text="To" />
+                                                                                <LocalDateTextField layoutX="80.0" layoutY="10.0" />
+                                                                                <LocalTimePicker layoutX="213.0" layoutY="7.0" />
+                                                                            </children>
+                                                                        </HBox>
+                                                                    </children>
+                                                                </HBox>
+                                                                <HBox layoutX="36.0" layoutY="45.0" spacing="310.0">
+                                                                    <children>
+                                                                        <HBox layoutX="36.0" layoutY="45.0" spacing="23.0">
+                                                                            <children>
+                                                                                <Label layoutX="36.0" layoutY="49.0" text="Shift" />
+                                                                                <ChoiceBox layoutX="83.0" layoutY="45.0" prefHeight="25.0" prefWidth="120.0" />
+                                                                            </children>
+                                                                        </HBox>
+                                                                        <HBox layoutX="510.0" layoutY="45.0" spacing="20.0">
+                                                                            <children>
+                                                                                <Label layoutX="510.0" layoutY="49.0" text="Segment" />
+                                                                                <ChoiceBox layoutX="580.0" layoutY="45.0" prefWidth="150.0" />
+                                                                            </children>
+                                                                        </HBox>
+                                                                    </children>
+                                                                </HBox>
+                                                            </children>
+                                                        </VBox>
+                                                        <Button layoutX="821.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: linear-gradient(#f2f2f2, #d6d6d6),        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),        linear-gradient(#dddddd 0%, #f6f6f6 50%);; -fx-background-radius: 8,7,6;; -fx-background-insets: 0,1,2; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );; -fx-text-fill: #000000;" text="Show report">
+                                                            <cursor>
+                                                                <Cursor fx:constant="HAND" />
+                                                            </cursor>
+                                                        </Button>
+                                                    </children>
+                                                </Pane>
+                                            </children>
+                                        </StackPane>
+                                        <StackPane prefHeight="271.0" prefWidth="983.0">
+                                            <children>
+                                                <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                                                    <content>
+                                                        <LineChart prefHeight="242.0" prefWidth="500.0">
+                                                            <xAxis>
+                                                                <CategoryAxis side="BOTTOM" />
+                                                            </xAxis>
+                                                            <yAxis>
+                                                                <NumberAxis side="LEFT" />
+                                                            </yAxis>
+                                                        </LineChart>
+                                                    </content>
+                                                </ScrollPane>
+                                            </children>
+                                        </StackPane>
+                                        <StackPane prefHeight="250.0" prefWidth="937.0">
+                                            <children>
+                                                <ScrollPane prefHeight="200.0" prefWidth="200.0" />
+                                            </children>
+                                        </StackPane>
+                                        <StackPane prefHeight="82.0" prefWidth="983.0">
+                                            <children>
+                                                <Pane prefHeight="65.0" prefWidth="903.0">
+                                                    <children>
+                                                        <HBox layoutX="239.0" layoutY="25.71428680419922" spacing="30.0">
+                                                            <children>
+                                                                <FontAwesomeIconView glyphName="" layoutX="239.0" layoutY="37.0" size="32" styleClass="fa-file-pdf-o" />
+                                                                <FontAwesomeIconView layoutX="279.0" layoutY="36.0" size="32" />
+                                                                <FontAwesomeIconView layoutX="325.0" layoutY="42.0" size="32" />
+                                                                <FontAwesomeIconView layoutX="335.0" layoutY="42.0" size="32" wrappingWidth="28.0" />
+                                                            </children>
+                                                        </HBox>
+                                                    </children>
+                                                </Pane>
+                                            </children>
+                                        </StackPane>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </StackPane>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="100.0" right="100.0" top="10.0" />
+            </padding>
+        </StackPane>
+        <StackPane layoutX="13.0" layoutY="835.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="1201.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0">
+            <children>
+                <Label text="Footer">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>
